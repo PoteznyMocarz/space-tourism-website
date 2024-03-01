@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="custom-classes.css">
+    <title>Document</title>
+</head>
+<body class="bg-[url('/assets/technology/background-technology-mobile.jpg')] md:bg-[url('/assets/technology/background-technology-tablet.jpg')] xl:bg-[url('/assets/technology/background-technology-desktop.jpg')] bg-cover min-h-screen pb-[40px] font-barlow">
+    <div class="flex justify-between p-7 xl:p-11 xl:pt-16">
+        <img src="/assets/shared/logo.svg" alt="">
+        <div class="text-white hidden md:flex bg-[#131423] xl:bg-[#7f818580] glass-effect absolute xl:top-9 top-0 right-0 xl:w-[58%] w-[65%] text-[18px] xl:text-[17px] justify-evenly h-[100px] items-center uppercase font-[300] xl:justify-start xl:gap-[50px] xl:pl-[150px] 2xl:text-[20px]">
+          <a href="index.html"><span class="relative top-element"><span class="hidden xl:inline font-bold">00 &nbsp;</span> Home</span></a>
+          <a href="destination.html"><span class="relative top-element"><span class="hidden xl:inline font-bold">01 &nbsp;</span> Destination</span></a>
+          <a href="crew.html"><span class="relative top-element"><span class="hidden xl:inline font-bold">02 &nbsp;</span> Crew</span></a>
+          <a href="technology.html"><span class="relative after:absolute md:after:content-[''] md:after:h-[3px] md:after:w-full md:after:bottom-[-41px] 2xl:after:bottom-[-39px] after:left-0 md:after:bg-white"><span class="hidden xl:inline font-bold">03 &nbsp;</span> Technology</span></a>
+          <div class="absolute left-[-50%] top-[50%] translate-y-[-50%] w-[60%] bg-gray-500 z-10 h-[1px]"></div>
+        </div>
+        <img id="openMenuBtn" class="object-none md:hidden" src="/assets/shared/icon-hamburger.svg" alt="">
+      </div>
+      <div id="menu" class="absolute top-0 right-0 w-[0%] menu-transitions md:hidden h-full glass-effect z-20 flex flex-col text-white pt-[30%] text-[23px] pl-[10%] gap-7 hidden">
+        <img id="closeMenuBtn" class="absolute top-10 right-10" src="/assets/shared/icon-close.svg" alt="">
+        <a class="text-nowrap" href="index.html"><span class="font-[300]"><span class="font-bold">00 &nbsp;</span> Home</span></a>
+        <a class="text-nowrap" href="destination.html"><span class="font-[300]"><span class="font-bold text-[25px]">01 &nbsp;</span> Destination</span></a>
+        <a class="text-nowrap" href="crew.html"><span class="font-[300]"><span class="font-bold">02 &nbsp;</span> Crew</span></a>
+        <a class="text-nowrap" href="technology.html"><span class="font-[300]"><span class="font-bold">03 &nbsp;</span> Technology</span></a>
+      </div>
+      <h1 class="text-white text-[23px] uppercase text-center md:mt-9 md:text-[33px] xl:text-left ml-[7%] xl:text-[35px] 2xl:text-[38px] 2xl:ml-[8%]"><span class="text-[#4e535a] font-[600]">03 &nbsp;</span> Space launch 101</h1> 
+    <div class="flex flex-col md:mt-5 xl:flex-row xl:justify-between xl:pl-[8%] 2xl:pl-[12%] xl:items-center">
+        <img id="techImg" class="object-contain mt-6 xl:order-2 2xl:h-[600px] planet-transitions" src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+
+        <div class="flex self-center w-[200px] justify-between text-white font-bellefair text-[19px] md:text-[27px] md:w-[270px] mt-6 xl:order-[-1] xl:flex-col xl:gap-8 xl:scale-110 2xl:scale-125">
+            <span id="btn1" class="border-[1px] border-[#6a7175] p-5 rounded-full max-w-[40px] max-h-[40px] justify-center flex items-center md:p-7 active-slide 2xl:p-8 cursor-pointer slide-transitions font-bold">1</span>
+            <span id="btn2" class="border-[1px] border-[#6a7175] p-5 rounded-full max-w-[40px] max-h-[40px] justify-center flex items-center md:p-7 2xl:p-8 cursor-pointer slide-transitions font-bold">2</span>
+            <span id="btn3" class="border-[1px] border-[#6a7175] p-5 rounded-full max-w-[40px] max-h-[40px] justify-center flex items-center md:p-7 2xl:p-8 cursor-pointer slide-transitions font-bold">3</span>
+        </div>
+
+      <div id="techTextMain" class="flex flex-col mt-5 gap-1 xl:order-1 xl:ml-[80px] planet-transitions">
+        <span class="text-[#cfd0ea] uppercase text-center text-[19px] md:text-[26px] xl:text-left xl:text-[35px] 2xl:text-[43px]">The terminology...</span>
+        <span id="techName" class="uppercase text-center text-white font-bellefair text-[28px] md:text-[35px] xl:text-left xl:text-[46px] 2xl:text-[60px]">Launch vehicle</span>
+        <p id="techDesc" class="text-[#cfd0ea] text-center text-[17px] px-5 mt-4 md:text-[20px] md:max-w-[80%] md:self-center xl:self-start xl:px-0 xl:text-left 2xl:text-[27px]">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+            payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+            it's quite an awe-inspiring sight on the launch pad!</p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="technology.js"></script>
+</body>
+</html>

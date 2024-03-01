@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="custom-classes.css">
+    <title>Document</title>
+</head>
+<body class="bg-[url('/assets/crew/background-crew-mobile.jpg')] md:bg-[url('/assets/crew/background-crew-tablet.jpg')] xl:bg-[url('/assets/crew/background-crew-desktop.jpg')] bg-cover min-h-screen pb-[40px] xl:h-screen 2xl:overflow-hidden font-barlow">
+    <div class="flex justify-between p-7 xl:p-11 xl:pt-16">
+        <img src="/assets/shared/logo.svg" alt="">
+        <div class="text-white hidden md:flex bg-[#131423] xl:bg-[#7f818580] glass-effect absolute xl:top-9 top-0 right-0 xl:w-[58%] w-[65%] text-[18px] xl:text-[17px] justify-evenly h-[100px] items-center uppercase font-[300] xl:justify-start xl:gap-[50px] xl:pl-[150px] 2xl:text-[20px]">
+          <a href="index.html"><span class="relative top-element"><span class="hidden xl:inline font-bold">00 &nbsp;</span> Home</span></a>
+          <a href="destination.html"><span class="relative top-element"><span class="hidden xl:inline font-bold">01 &nbsp;</span> Destination</span></a>
+          <a href="crew.html"><span class="relative after:absolute md:after:content-[''] md:after:h-[3px] md:after:w-full md:after:bottom-[-41px] 2xl:after:bottom-[-39px] after:left-0 md:after:bg-white"><span class="hidden xl:inline font-bold">02 &nbsp;</span> Crew</span></a>
+          <a href="technology.html"><span class="relative top-element"><span class="hidden xl:inline font-bold">03 &nbsp;</span> Technology</span></a>
+          <div class="absolute left-[-50%] top-[50%] translate-y-[-50%] w-[60%] bg-gray-500 z-10 h-[1px]"></div>
+        </div>
+        <img id="openMenuBtn" class="object-none md:hidden" src="/assets/shared/icon-hamburger.svg" alt="">
+      </div>
+      <div id="menu" class="absolute top-0 right-0 w-[0%] menu-transitions md:hidden h-full glass-effect z-20 flex flex-col text-white pt-[30%] text-[23px] pl-[10%] gap-7 hidden">
+        <img id="closeMenuBtn" class="absolute top-10 right-10" src="/assets/shared/icon-close.svg" alt="">
+        <a class="text-nowrap" href="index.html"><span class="font-[300]"><span class="font-bold">00 &nbsp;</span> Home</span></a>
+        <a class="text-nowrap" href="destination.html"><span class="font-[300]"><span class="font-bold text-[25px]">01 &nbsp;</span> Destination</span></a>
+        <a class="text-nowrap" href="crew.html"><span class="font-[300]"><span class="font-bold">02 &nbsp;</span> Crew</span></a>
+        <a class="text-nowrap" href="technology.html"><span class="font-[300]"><span class="font-bold">03 &nbsp;</span> Technology</span></a>
+      </div>
+
+      <h1 class="text-white text-[23px] uppercase text-center md:mt-9 md:text-[33px] xl:text-left ml-[7%] xl:text-[35px] 2xl:text-[38px] 2xl:ml-[8%]"><span class="text-[#4e535a] font-[600]">02 &nbsp;</span> Meet your crew</h1>
+
+      <div class="flex flex-col md:mt-5 xl:flex-row xl:justify-between xl:px-[8%] 2xl:px-[12%]">
+        <img id="crewImg" class="max-h-[260px] max-w-[220px] self-center mt-6 md:order-1 md:max-h-[360px] md:max-w-[320px] xl:max-h-[620px] xl:max-w-[680px] 2xl:scale-125 planet-transitions" src="/assets/crew/image-douglas-hurley.png" alt="">
+        <div id="text-container" class="flex flex-col mt-6 gap-6 xl:mt-20 2xl:scale-110 planet-transitions">
+            <div class="flex justify-between w-[130px] self-center md:order-1 xl:self-start xl:mt-6">
+                <div id="dot1" class="h-[17px] w-[17px] bg-[#50545d] rounded-full cursor-pointer active-dot"></div>
+                <div id="dot2" class="h-[17px] w-[17px] bg-[#50545d] rounded-full cursor-pointer"></div>
+                <div id="dot3" class="h-[17px] w-[17px] bg-[#50545d] rounded-full cursor-pointer"></div>
+                <div id="dot4" class="h-[17px] w-[17px] bg-[#50545d] rounded-full cursor-pointer"></div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <span id="jobName" class="text-[#cfd0ea] font-bellefair uppercase text-center xl:text-left text-[24px] md:text-[30px] xl:text-[50px]">Commander</span>
+                <span id="personName" class="text-white uppercase font-bellefair text-center xl:text-left text-[30px] md:text-[36px] xl:text-[70px] whitespace-nowrap">Douglas Hurley</span>
+            </div>
+            <p id="description" class="text-[#cfd0ea] text-center text-[17px] px-7 md:text-[20px] md:max-w-[600px] self-center xl:self-start xl:text-left xl:px-0 xl:text-[25px]">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+                and former NASA astronaut. He launched into space for the third time as 
+                commander of Crew Dragon Demo-2.</p>
+        </div>
+      </div>
+
+      <script src="index.js"></script>
+      <script src="crew.js"></script>
+</body>
+</html>
