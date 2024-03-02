@@ -1,3 +1,7 @@
+window.addEventListener("load", function() {
+    document.getElementById("preloaderGif").classList.add("hidden")
+})
+
 let openMenuBtn = document.getElementById("openMenuBtn");
 let closeMenuBtn = document.getElementById("closeMenuBtn");
 let menu = document.getElementById("menu");
